@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/well-prof/studion2/issues"
   },
-  "homepage": "https://github.com/well-prof/studion2#readme"
+  "homepage": "https://github.com/well-prof/studion2#readme",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
 }
