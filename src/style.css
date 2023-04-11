@@ -5,6 +5,7 @@
 }
 
 :root {
+     --color-primary: #ffc500; /* [PODE USAR QQ NOME DEPOIS DO --] */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
 }
@@ -37,6 +38,102 @@ ul {
 
     background-color: #000;
     color: #fff;
-
-    ;
 } 
+
+.navbar__links {
+    justify-self: end;
+}
+
+.navbar__links li {
+    font-size: 0.875rem;
+    margin-right: 3rem;
+   text-transform: uppercase;
+}
+
+.navbar__links a {
+    color: #fff; 
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.navbar__links a:hover {
+    color: var(--color-primary);
+    /* font-weight: 700; */
+}
+
+.logo-studion {
+    font-size: 2.375rem;
+    font-weight: 800;
+    line-height: 1ch;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.logo-studion__subtitle {
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+.copy--primary {
+    color: var(--color-primary);
+}
+
+#slider {
+    background-color: #000;
+    color: var(--color-text);
+}
+
+#slide {
+    position: relative;
+    height: calc(100vh - 7.75rem);
+}
+
+.slide__background-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;   
+}
+
+.slide__copy {
+    position: absolute;
+    top: 6.25rem;
+    left: 50vw;
+}
+
+.slide__copy h6 {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1875rem;
+}
+
+.slide__copy h2 {
+    font-size: 6.25rem;
+    text-transform: uppercase;
+    line-height: 6.25rem;
+} 
+
+.slide__copy h2 span {
+    display: block;
+}
+
+.btn {
+    cursor: pointer;     /* VIRA MAOZINHA NO LINK */
+    padding: 1 rem 2.5rem;
+    border: 0.125rem solid #fff;
+    border-radius: 5 rem;
+    color: var(--color-primary);
+    background: unset;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s all ease;
+}
+
+.btn:hover {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: #fff;
+}
